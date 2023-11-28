@@ -1,23 +1,25 @@
+
 //- extends layout
 
 //- block content
 //-   h1= title
 
-//-   form(method="POST" action="/new")
-//-     label(for="author") Author's Name:
-//-     input(type="text", name="author", id="author", required)
+//-   form(method="POST" action="/new" class="message-form")
+//-     div.form-group
+//-       label(for="author") Author's Name:
+//-       input(type="text", name="author", id="author", class="form-control", required)
 
-//-     label(for="message") Message Text:
-//-     input(type="text", name="message", id="message", required)
-
-//-     input(type="submit", value="Submit")
+//-     div.form-group
+//-       label(for="message") Message Text:
+//-       textarea(name="message", id="message", class="form-control", rows="4", required)
+      
+//-     button.btn(type="submit") Submit
 
 extends layout
 
 block content
   h1= title
-
-  form(method="POST" action="/new" class="message-form")
+  form(action="/new", method="POST" class="message-form")
     div.form-group
       label(for="author") Author's Name:
       input(type="text", name="author", id="author", class="form-control", required)

@@ -55,6 +55,13 @@ button:hover{
   font-size: 14px; /* Adjust the font size as needed */
 }
 
+.user-icon {
+  width: 24px; /* Adjust the width as needed */
+  height: 24px; /* Adjust the height as needed */
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
 /* FORM */
 
 .message-form {
