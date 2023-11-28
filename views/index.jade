@@ -1,6 +1,14 @@
+
 extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-
+  form(action="/new", method="GET")
+    button(type="submit") Post a New Message
+  ul
+    each message in messages
+      li
+        strong= message.user
+        | : #{message.text}
+        br
+        span.message-date= message.added
