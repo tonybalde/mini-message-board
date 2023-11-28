@@ -76,4 +76,10 @@ input, textarea {
   padding: 8px;
   box-sizing: border-box;
   margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid  #4285f4;
+}
+
+textarea{
+  resize: none;
 }
