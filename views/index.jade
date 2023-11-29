@@ -1,19 +1,4 @@
 
-//- extends layout
-
-//- block content
-//-   h1= title
-//-   form(action="/new", method="GET")
-//-     button(type="submit") Post a New Message
-//-   ul
-//-     each message in messages
-//-       li
-//-         span.user-icon= message.user.icon
-//-         strong= message.user.name
-//-         | : #{message.text}
-//-         br
-//-         span.message-date= message.added
-
 extends layout
 
 block content
@@ -23,8 +8,8 @@ block content
   ul
     each message in messages
       li
-        span.user-icon= message.user.icon
-        strong= message.user.name
-        | : #{message.text}
+        span.user-icon= message.icon
+        strong= message.author
+        | : #{message.messageText}
         br
-        span.message-date= message.added
+        span.message-date= message.createdAt

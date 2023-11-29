@@ -6,9 +6,8 @@ Built using:
 * NodeJS
 * Express
 * Moongose
+* MongoDB Atlas (to store the message in a DB online)
 * Pug
-
-This project is using what is called "server side rendering", no frontend were harmed in the development of the app...
 
 ## Screenshots
 
@@ -24,6 +23,3 @@ to the main page where you'll see your message posted.
 
 ## You can visite the live version at: https://mini-message-board-dev-eshn.1.us-1.fl0.io/
 
-# TODO:
-* Connect to a database to storage the messages
-* Others features...
