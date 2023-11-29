@@ -1,5 +1,25 @@
-# mini-message-board
+# Mini Message Board
 
-A mini message board app, to share massages
+A mini message board app, to share massages!
 
-Built using: NodeJS, Express and Moongose!
+Built using: 
+* NodeJS
+* Express
+* Moongose
+* Pug
+
+This project is using what is called "server side rendering", no frontend were harmed in the development of the app...
+
+## Screenshots
+
+This is the initial page, the first thing you see when it loads.
+
+![Message Board](/public/images/msg01.png)
+
+When you click the button "Post a New Message" it loads the form where you can type your name and the message. 
+When you finished tipying you can submit the new message clicking the button "Submit" and you'll be redirected
+to the main page where you'll see your message posted.
+
+![Submit a new Message](/public/images/msg02.png)
+
+# You can visite the live version at: https://mini-message-board-dev-eshn.1.us-1.fl0.io/
