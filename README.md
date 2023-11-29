@@ -22,4 +22,4 @@ to the main page where you'll see your message posted.
 
 ![Submit a new Message](/public/images/msg02.png)
 
-# You can visite the live version at: https://mini-message-board-dev-eshn.1.us-1.fl0.io/
+## You can visite the live version at: https://mini-message-board-dev-eshn.1.us-1.fl0.io/
