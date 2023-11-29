@@ -23,3 +23,9 @@ to the main page where you'll see your message posted.
 
 ## You can visite the live version at: https://mini-message-board-dev-eshn.1.us-1.fl0.io/
 
+## TODO:
+* Dark Mode
+* Admin Dashboard to edit, delete message
+* Messages validations
+* Emojis picker
+* Other..
