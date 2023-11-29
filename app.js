@@ -1,6 +1,7 @@
 require('dotenv').config(); // Load environment variables from .env file
 
 var mongoose = require('mongoose');
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -13,12 +14,15 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // Connection to DB
+// mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
+
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+  useNewUrlParser: process.env.USE_NEW_URL_PARSER,
+  useUnifiedTopology: process.env.USE_UNIFIED_TOPOLOGY
 });
-
-
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
