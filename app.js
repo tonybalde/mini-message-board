@@ -14,14 +14,9 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // Connection to DB
-// mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// });
-
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
-  useNewUrlParser: process.env.USE_NEW_URL_PARSER,
-  useUnifiedTopology: process.env.USE_UNIFIED_TOPOLOGY
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 
 app.set('views', path.join(__dirname, 'views'));
