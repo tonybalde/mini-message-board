@@ -15,7 +15,7 @@ var app = express();
 
 // Connection to DB
 
-dotenv.config({ path: "config.env" });
+dotenv.config({ path: ".env" });
 
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
   useNewUrlParser: true,
