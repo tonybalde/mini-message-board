@@ -28,6 +28,8 @@ li {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid #4285f4;
+
 }
 
 button {
@@ -53,6 +55,7 @@ button:hover{
 .message-date {
   color: #888; /* Gray color */
   font-size: 14px; /* Adjust the font size as needed */
+  padding: 1.6rem;
 }
 
 .user-icon {
@@ -90,3 +93,4 @@ input, textarea {
 textarea{
   resize: none;
 }
+
