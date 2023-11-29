@@ -1,3 +1,4 @@
+require('dotenv').config(); // Load environment variables from .env file
 
 var createError = require('http-errors');
 var express = require('express');
@@ -5,18 +6,19 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
-var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
-// Connect to MongoDB
-mongoose.connect('mongodb+srv://lausanmartini:l0sb0rg0s@cluster1.l5grmep.mongodb.net/tonybalde?retryWrites=true&w=majority', {
+// Connection to DB
+mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
+
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
