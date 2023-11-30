@@ -14,7 +14,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // Connection to DB
-mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
+mongoose.connect(process.env.DATABASE_CONNECTION_STRING.toString(), {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
