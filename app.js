@@ -16,9 +16,7 @@ var app = express();
 // Connection to DB
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true
+  useUnifiedTopology: true
 });
 
 app.set('views', path.join(__dirname, 'views'));
