@@ -21,7 +21,7 @@ to the main page where you'll see your message posted.
 
 ![Submit a new Message](/public/images/msg02.png)
 
-## You can visite the live version at: [HERE](https://elegant-pullover-cod.cyclic.app/)
+## You can visite the live version [HERE](https://elegant-pullover-cod.cyclic.app/)
 
 ## TODO:
 * Dark Mode
